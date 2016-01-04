@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Add a new user</title>
+  </head>
+  <body>
+    <h1>Welcome <%= @user_name %></h1>
+    <h2>Please enter the food and calories you want to track</h2>
+    <h2></h2><form action="/track_calories" method="POST">
+      <p>
+        Food: <input type="text" name="user[][food]" placeholder="Enter Food">
+        Calories: <input type="number" name="user[][calories]">
+      </p>
+      <p>
+        Food: <input type="text" name="user[][food]" placeholder="Enter Food">
+        Calories: <input type="number" name="user[][calories]">
+      </p>
+      <p>
+        Food: <input type="text" name="user[][food]" placeholder="Enter Food">
+        Calories: <input type="number" name="user[][calories]">
+      </p>
+
+      <input type="submit" value="Track This!">
+
+    </form>
+    </h2>
+  </body>
+</html>

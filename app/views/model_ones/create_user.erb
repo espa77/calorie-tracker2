@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Add a new user</title>
+  </head>
+  <body>
+    <h1>Welcome to the best Calorie Tracker in the Universe!!</h1>
+    <h2>Please enter your name, along with the food and calories you want to track</h2>
+    <h2><form action="/create_user" method="POST">
+      <p>
+        Name: <input type="text" name="user[name]" placeholder="Enter Your Name"></p>
+      <p>
+        Email: <input type="email" name="user[email]" placeholder="Enter Your Email Address"></p>
+
+          <p>
+          Food: <input type="text" name="calories[food]" placeholder="Enter Food">
+          Calories: <input type="number" name="calories[calories]"></p>
+
+      <input type="submit" value="Track This!">
+
+    </form>
+    </h2>
+  </body>
+</html>
